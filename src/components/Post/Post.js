@@ -1,9 +1,7 @@
 import React from 'react';
-
 import './Post.css';
 
 const post = (props) => {
-    console.log(props)
     return (
         <article className="Post" onClick={props.clicked}>
             <h1>{props.title.split(" ").splice(0, 2).join(" ")}</h1>
